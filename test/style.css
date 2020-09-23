@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Comfortaa:wght@700&family=Grandstander&family=Itim&family=Kosugi+Maru&family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding: 0 180px 0px 180px;
+}
+
+
+li,a,button,a{
+    font-family:"Comfortaa", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+
+
+/*    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;*/
+
+.header-cont{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+
+
+
+header {
+    height: 90px;
+    background: #24252A;
+    border: 1px solid #24252A;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    margin: 0px auto;
+    z-index: 1;
+    padding: 18px 160px 20px 175px;
+}
+
+h1{
+    font-family:"Grandstander", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    color: #edf0f1;
+    text-decoration: none;
+    cursor: context-menu;
+}
+
+.logo {
+    cursor: pointer;
+    float: left;
+        margin-top: 0px;
+}
+
+.navbar{    
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+
+/* .about-area, .contact-area{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+} */
+
+
+
+.nav__links {
+    list-style: none;
+    float: right;
+    margin-top: 25px;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #08aecf;
+}
+
+/* PARAGRAF INI */
+p{  
+    color: #d0e4f5;
+    font-family:"Comfortaa", sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.paragraf{
+    margin-bottom: 50px;
+}
+
+/* INFP INI */
+
+.infps{
+    width: 100%;
+    max-width: 500px;
+    padding: 0 20px;
+    margin: -5px -19px auto;
+}
+
+.infp-name{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 20px 0;
+    left: 90px;
+}
+
+.infp-bar{
+    height: 20px;
+    background: #0f869e;
+    border-radius: 8px;
+}
+
+.infp-per{
+    height: 20px;
+    background-color:#4dddfa;
+    border-radius: 8px;
+    width: 0%;
+    transition: 1.8s linear;
+    position: relative;
+}
+
+.infp-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: #ED5565;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+
+}
+
+.infp-per::after{
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color: #ED5565;
+    top: -17px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+
+}
+
+/* TIDAK JADI DIPAKAI 
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer; 
+    transition: all 0.3s ease 0s;
+} 
+
+span:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+
+*/
+
+/* INI LOH YANG EVELYN KARINA */
+
+.text{
+    margin-top: 300px;
+}
+
+.text span{
+    display: inline-block;
+}
+
+span.name{
+    color: #ED5565
+}
+
+span.m-left{
+    margin-left: -5px;
+}
+
+.text p{
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    font-size: .8rem;
+}
+
+.text a{
+    padding: 12px 25px;
+    font-family: "Grandstander";
+    background-color: none;
+    border: 3px solid #00b7db;
+    border-radius: 50px;
+    color: #00b7db;
+    font-size: .8rem;
+    letter-spacing: 2px;
+    position: relative;
+    top: 20px;
+    left: -5px;
+    overflow: hidden;
+    transition: .5s;
+    display: inline-block;
+}
+
+/* GAK TAU YANG MANA
+
+text a::before{
+    counter: '';
+    background-color: #ED5565;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    transition: .5s;
+}
+
+.text a:hover::before{
+    height: 100%;
+}
+*/
+
+.about{
+    height: 100vh;
+    margin-top: 330px;
+    font-family: Montserrat;
+    color: #fff;
+
+}
+
+/* === CONTACT === 
+.contact_input{
+    width: 100%;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi);
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1.5px solid var(--second-color);
+    outline: none;
+    margin-bottom: var(--mb-4);
+}
+
+.contact__button{
+    display: block;
+    border: none;
+    outline: none;
+    font-size: var(--normal-font-size);
+    cursor: pointer;
+    margin-left: auto;
+}
+*/
+
+
+
+.social-buttons a{
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 27px;
+    width: 50px;
+    height: 50px;
+    background: #24252A;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    border-radius: 80%;
+    margin-right: 33PX;
+
+}
+
+.social-buttons a::before{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, #00b7db, #0f869e);
+    border-radius: 50%;
+    border: 1px;
+    z-index: -1;
+    transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover::before{
+    transform: scale(0);
+}
+
+.social-buttons a i{
+    transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover i{
+    background: linear-gradient(45deg, #00b7db, #0f869e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(2.2);
+}
+
+.contacte{
+    font-family: Montserrat;
+    color: #fff;
+    margin-top: 330px;
+    margin-bottom: 22px;
+}
+
+footer{
+    font-family: "Comfortaa";
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    color: #4d5c68;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+
+

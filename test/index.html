@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+    <head>
+        <div class="home-area" id="home">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Evelyn Karina</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        </div>
+    </head>
+    <body>
+
+        
+        <header>
+            <div class="navbar">
+                <a href="#"><img class="logo" src="images/logo.png" alt="logo">
+                </a><nav>
+                <ul class="nav__links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            </div>
+            <div class="header-cont"></div>
+        </header>
+                
+            </section>
+        </main>
+
+        <div class="about-area" id=""></div>
+        <div class="container main-info-section">
+            <div class="text">
+                <h1>
+                    <span>I'm</span>
+                    
+                    <span class="name">Evelyn Karina</span>
+                    <span class="m-left">,</span>
+                    <br>
+                    <span>A web-designer.</span>
+                </h1>
+                <br>
+                <a href="#contact">CONTACT</a>
+        
+                    <!--RESPONSIVE TIDAK JADI
+                    <form>
+                        <input type="text" name="name" placeholder="Full Name">
+                    </form>-->
+            </div>
+            </div>
+        </div>
+        <!-- MASUKIN FOTO LU ANJAY
+        <div class="profile-image">
+            <img src="" alt="Karin">-->
+
+            
+    <div class="about">
+    <div class="container about" id="about">
+            
+        <h2>About</h2>   
+    &emsp;
+    
+            <div class="paragraf"><p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather.</p>
+            <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather.</p>
+            </div>
+            <div class="infp">
+        <div class="infps">
+            <div class="infp-name">Introverted</div>
+            <div class="infp-bar">
+                <div class="infp-per" per="57"></div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="infp">
+        <div class="infps">
+            <div class="infp-name">Intuitive</div>
+            <div class="infp-bar">
+                <div class="infp-per" per="69"></div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="infp">
+        <div class="infps">
+            <div class="infp-name">Feeling</div>
+            <div class="infp-bar">
+                <div class="infp-per" per="75"></div>
+            </div>
+        </div>
+    </div>
+          
+    <div class="infp">
+        <div class="infps">
+            <div class="infp-name">Prospecting</div>
+            <div class="infp-bar">
+                <div class="infp-per" per="85"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    
+    <script>
+        $('.infp-per').each(function(){
+            var $this = $(this);
+            var per = $this.attr('per');
+            $this.css("width",per+'%');
+            $({animatedValue: 0}).animate({animatedValue: per},{
+                duration:1000,
+                step: function(){
+                    $this.attr('per', Math.floor(this.animatedValue) + '%');
+                }, 
+                complete: function(){
+                    $this.attr('per', Math.floor (this.animatedValue) + '%');
+                }
+            });
+        });
+    </script>
+    
+    <!--=====CONTACT INI=====-->
+    
+    <div class="container contact" id="contact">
+        <div class="contacte">
+        <h2>Contact</h2></div>
+        <div class="social-buttons">
+            <a href="https://instagram.com/evelynkrn"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/karinfluenza"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com"><i class="fab fa-github"></i></a>
+            <a href="https://linked.in"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>>
+    
+    
+    <footer>
+        <!--<hr>-->
+
+        </div>
+    </body>
+
+    <footer>(c) 2020 Copyright. All Rights Reserved.</footer>
+
+    
+    <!-- SCROLL REVEAL -->
+    <script src="https://unkpg.com/scrollreveal"></script> 
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
